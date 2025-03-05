@@ -38,3 +38,25 @@ canvas {
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
+/* Position the on-screen controls at the bottom, centered */
+.controls {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.controls button {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+  background: #ff5733;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.controls button:active {
+  transform: scale(0.95);
+}

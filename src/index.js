@@ -61,6 +61,30 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
+leftBtn.addEventListener("click", moveRodsLeft);
+rightBtn.addEventListener("click", moveRodsRight);
+
+// NEW: Functions to move rods left or right
+function moveRodsLeft() {
+  topRod.x = Math.max(topRod.x - rodSpeed, 0);
+  bottomRod.x = Math.max(bottomRod.x - rodSpeed, 0);
+}
+
+function moveRodsRight() {
+  let maxRight = canvas.width - rodWidth;
+  topRod.x = Math.min(topRod.x + rodSpeed, maxRight);
+  bottomRod.x = Math.min(bottomRod.x + rodSpeed, maxRight);
+}
+
+// Rest of your game logic...
+// e.g. startRound(), resetPositions(), update(), draw(), gameLoop(), etc.
+
+// Example: Start Button logic
+startButton.addEventListener("click", () => {
+  // Hide the start button, set isPlaying = true, give ball velocity, etc.
+  // ...
+});
+
 // === Start Button Logic ===
 startButton.addEventListener("click", function () {
   if (!isPlaying) {
