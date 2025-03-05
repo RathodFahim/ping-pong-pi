@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+  background: rgb(179, 67, 104);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,8 +13,8 @@ body {
 
 /* Canvas Styles */
 canvas {
-  background: #f1f1f1;
-  border: 4px solid #333;
+  background: #96b584;
+  border: 4px solid #59844b;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
