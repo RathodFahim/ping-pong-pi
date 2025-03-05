@@ -2,10 +2,11 @@
   "name": "ping-pong-game",
   "version": "1.0.0",
   "main": "index.html",
-  "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
-  },
+  "homepage": "https://RathodFahim.github.io/ping-pong-pi/",
+"scripts": {
+  "start": "parcel index.html --open",
+  "build": "parcel build index.html --public-url ./"
+},
   "dependencies": {
     "parcel-bundler": "^1.6.1"
   },
