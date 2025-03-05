@@ -1,14 +1,34 @@
-/* Global Styles */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen, centered layout */
 body {
   margin: 0;
   padding: 0;
   /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
   background: rgb(179, 67, 104);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Start Button Styles */
+#startGame {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #ff4500;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 /* Canvas Styles */
